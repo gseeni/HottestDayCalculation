@@ -1,0 +1,16 @@
+Below are the assumptions and the points taken to consideration of finding the hottest day.
+
+Temperature was taken in Celcius.
+
+Data related to wind (direction, speed, and Gust) has been ignored as this may affect the coolest temperature than hot one.
+
+Some of the value of screen temperature was captured as -99.  These records have been considered as outliers and ignored as this may affect the average value while calculate.
+
+Only the records related to significant code was 1 is considered to calculate the hottest day.  This is being done because other codes are mostly related to rain and other cold climates. 
+
+Assumption was made that, even if it rained for an hour (or anytime with in an hour), this will definitely affect next hour temperature as it may take some additional time to warm the earth.  So only sunny hours have been considered.
+
+Since we need only the hottest day, temperature and the region rest of other columns like country, sitename and code have been ignored for conversion of data into parquet file.
+
+
+
